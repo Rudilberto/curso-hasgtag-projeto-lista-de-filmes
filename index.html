@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de filmes para assistir</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="notie-master/dist/notie.min.css
+    "
+    />
+  </head>
+  <body class="">
+    <header class="header">
+      <div class="mymovies">
+        <i class="bi bi-film"></i>
+        <h1>MyMovies</h1>
+      </div>
+      <form id="form-search" action="" method="post">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" />
+        </div>
+        <div>
+          <label for="nome">Ano:</label>
+          <input type="text" id="ano" name="ano" />
+        </div>
+        <button id="search" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+    </header>
+    <main>
+      <div class="titulo"><h2>Comece agora a sua lista de filmes</h2></div>
+      <section class="filmes">
+        <ul id="lista-filmes"></ul>
+      </section>
+      <article>
+        <div class="modal">
+          <span class="X">x</span>
+          <h2 id="titulo-filme"></h2>
+          <div class="infos">
+            <div class="banner">
+              <img id="banner" src="" alt="Banner" />
+            </div>
+            <div class="dados">
+              <p id="sinopse"></p>
+              <p id="elenco"></p>
+              <p id="genero"></p>
+            </div>
+          </div>
+          <button id="add-to-list" href="/">add to list</button>
+        </div>
+      </article>
+    </main>
+    <script src="modal.js"></script>
+    <script src="script.js"></script>
+    <script src="notie-master/dist/notie.min.js"></script>
+    <script src="key.js"></script>
+  </body>
+</html>
